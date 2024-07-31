@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="parent">
+                <h2>Date<span id="date"></span></h2>
+                <h2>Month<span id="month"></span></h2>
+                <h2>Year<span id="year"></span></h2>
+            </div>
+            <div class="parent">
+                <h2>Hour<span id="hour"></span></h2>
+                <h2>Minutes<span id="minute"></span></h2>
+                <h2>Seconds<span id="sec"></span></h2>
+            </div>
+            <div class="parent">
+                <h2><input type="radio" name="day" value="0">Sun</h2>
+                <h2><input type="radio" name="day" value="1">Mon</h2>
+                <h2><input type="radio" name="day" value="2">Tue</h2>
+                <h2><input type="radio" name="day" value="3">Wed</h2>
+                <h2><input type="radio" name="day" value="4">Thu</h2>
+                <h2><input type="radio" name="day" value="5">Fri</h2>
+                <h2><input type="radio" name="day" value="6">Sat</h2>
+            </div>
+            <div class="child">
+                <h2><input type="radio" name="time">AM</h2>
+                <h2><input type="radio" name="time">PM</h2>
+            </div>
+            <div class="alarm-settings">
+                <h2>Set Alarm:</h2>
+                <input type="number" id="alarmHour" placeholder="HH" min="0" max="12">
+                <input type="number" id="alarmMinute" placeholder="MM" min="0" max="59">
+                <input type="radio" name="alarmTime" value="AM">AM
+                <input type="radio" name="alarmTime" value="PM">PM
+                <button onclick="setAlarm()">Set Alarm</button>
+            </div>
+            <h2 id="alarmMessage"></h2>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

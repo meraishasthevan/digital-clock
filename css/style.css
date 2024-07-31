@@ -1,0 +1,111 @@
+.container {
+    width: 60%;
+    margin: auto;
+    background-color: black;
+    color: white;
+    height: 60vh;
+}
+
+.content {
+    width: 70%;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+.child {
+    float: right;
+    padding-right: 50px;
+}
+
+
+.alarm-settings {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.alarm-settings h2 {
+    margin-bottom: 10px;
+}
+
+.alarm-settings input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+.alarm-settings input[type="radio"] {
+    margin-left: 10px;
+}
+
+.alarm-settings button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.alarm-settings button:hover {
+    background-color: #0056b3;
+}
+
+#alarmMessage {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+
+@media(max-width: 575px) {
+    .container {
+        width: 100%;
+        height: 120vh;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media(min-width: 576px) {
+    .container {
+        width: 100%;
+        height: 120vh;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 90%;
+        height: 120vh;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media(min-width: 991px) {
+    .container {
+        width: 90%;
+        height: 120vh;
+    }
+    .content {
+        width: 100%;
+    }
+}
